@@ -1,0 +1,52 @@
+精彩生活圈 page 为页码
+http://api.xiangha.com/main6/index/getTieList?page=1&pageTime=
+商城
+http://api.xiangha.com/main6/ads/getBasicList?
+社区
+http://api.xiangha.com/main6/quan/staticData?
+
+未知
+http://api.xiangha.com/main6/quan/myQuanV2?
+社区---最新
+
+http://api.xiangha.com/main6/tie/getList?cid=10&mid=13&page=1&pageTime=
+首页 顶部轮播 人气美食家 香哈头条等
+http://api.xiangha.com/main6/index/baseData?
+香哈头条
+http://api.xiangha.com/main5/zhishi/getNousList?type=new&page=1
+健康养生
+http://api.xiangha.com/main5/zhishi/getNousList?type=classify&pinyin=ys&page=1
+烹饪技巧
+
+http://api.xiangha.com/main5/zhishi/getNousList?type=classify&pinyin=jq&page=1
+美食精选 pinyin=jx
+美食杂谈 pinyin=zt
+今日佳作
+http://api.xiangha.com/main6/index/todayGood?type=1&page=1
+分类---菜谱
+
+http://api.xiangha.com/main5/so/getSoData?type=caipu&s=%25E5%25AE%25B6%25E5%25B8%25B8%25E8%258F%259C&page=1
+分类--全部
+
+http://api.xiangha.com/main5/so/getSoData?type=all&s=%25E5%25AE%25B6%25E5%25B8%25B8%25E8%258F%259C&page=
+分类--食材
+
+http://api.xiangha.com/main5/so/getSoData?type=shicai&s=%E5%AE%B6%E5%B8%B8%E8%8F%9C&page=1
+分类--菜单
+
+http://api.xiangha.com/main5/so/getSoData?type=caidan&s=%E5%AE%B6%E5%B8%B8%E8%8F%9C&page=1
+分类--相克
+
+http://api.xiangha.com/main5/so/getSoData?type=xiangke&s=%E5%AE%B6%E5%B8%B8%E8%8F%9C&page=1
+分类-健康养生
+
+http://api.xiangha.com/main5/so/getSoData?type=jiankang&s=%E5%AE%B6%E5%B8%B8%E8%8F%9C&page=1
+分类--香哈头条
+
+http://api.xiangha.com/main5/so/getSoData?type=zhishi&s=%E5%AE%B6%E5%B8%B8%E8%8F%9C&page=1
+分类--美食帖
+
+http://api.xiangha.com/main5/so/getSoData?type=quan&s=%E5%AE%B6%E5%B8%B8%E8%8F%9C&page=1
+分类---哈友
+
+http://api.xiangha.com/main5/so/getSoData?type=customer&s=%E5%AE%B6%E5%B8%B8%E8%8F%9C&page=1

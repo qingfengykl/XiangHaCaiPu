@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="bean"
+            type="com.kelin.xianghashipu.baen.LifeCircle.DataBean"/>
+        <import type="android.net.Uri"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/life_circle_item_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            fresco:imageURI="@{Uri.parse(bean.customer.img)}"
+            fresco:roundAsCircle="true"/>
+
+        <TextView
+            android:id="@+id/life_circle_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/life_circle_item_icon"
+            android:gravity="center"
+            android:textColor="#4b4b4b"
+            android:textSize="14sp"
+            tools:text="你好啊啊"/>
+
+        <TextView
+            android:id="@+id/life_circle_item_foodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/life_circle_item_icon"
+            android:layout_below="@id/life_circle_item_icon"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textColor="#4b4b4b"
+            android:textSize="20sp"
+            tools:text="你好啊啊"/>
+
+        <LinearLayout
+            android:id="@+id/life_circle_item_imgContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/life_circle_item_foodName"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/life_circle_item_img_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                fresco:viewAspectRatio="1"
+                fresco:imageURI="@{Uri.parse(bean.imgs[0])}"
+                />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/life_circle_item_img_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                fresco:viewAspectRatio="1"
+                fresco:imageURI="@{Uri.parse(bean.imgs[1])}"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/life_circle_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/life_circle_item_icon"
+            android:layout_below="@id/life_circle_item_imgContainer"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textColor="#4b4b4b"
+            android:textSize="20sp"
+            tools:text="你好啊啊"/>
+
+        <TextView
+            android:id="@+id/life_circle_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/life_circle_item_icon"
+            android:layout_below="@id/life_circle_item_content"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textColor="#4b4b4b"
+            android:textSize="16sp"
+            tools:text="你好啊啊"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6px"
+            android:layout_below="@id/life_circle_item_time"
+            android:layout_marginTop="5dp"
+            android:background="#444"/>
+
+    </RelativeLayout>
+</layout>
